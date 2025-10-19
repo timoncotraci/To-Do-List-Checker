@@ -168,7 +168,7 @@ export default function App() {
           *{box-sizing:border-box} 
         `}</style>
         <main style={{ margin: "auto", width: 420, padding: 24, background: "var(--card)", borderRadius: 12, boxShadow: "var(--shadow)" }}>
-          <h1 style={{ marginTop: 0, fontSize: 20 }}>Minimal To‑Do</h1>
+          <h1 style={{ marginTop: 0, fontSize: 20 }}>To Do List Checker</h1>
           <p style={{ color: "var(--muted)", marginTop: 0 }}>{authStage === "register" ? "Create an account to start." : "Welcome back — please log in."}</p>
 
           <div style={{ display: "flex", flexDirection: "column", gap: 8, marginTop: 12 }}>
@@ -189,7 +189,8 @@ export default function App() {
                   <button onClick={handleLogin} style={styles.btn}>Log In</button>
                   <button onClick={() => setAuthStage("register")} style={styles.ghost}>New? Register</button>
                 </div>
-                <div style={{ marginTop: 8, color: "var(--muted)", fontSize: 13 }}>If you forgot your password, refresh the page to re-register (simple local demo).</div>
+                <div style={{ marginTop: 8, color: "var(--muted)", fontSize: 13 }}>If you forgot your password, refresh the page to re-register -admin Traci ^^
+                  .</div>
               </>
             )}
           </div>
@@ -218,7 +219,7 @@ export default function App() {
       <aside style={styles.sidebar}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div>
-            <div style={styles.logo}>Minimal To‑Do</div>
+            <div style={styles.logo}>To Do List Checker</div>
             <div style={styles.small}>Simple • Fast • Focused</div>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
@@ -339,8 +340,8 @@ export default function App() {
 
               <aside style={{ padding: 12, borderRadius: 10, background: "var(--card)", boxShadow: "var(--shadow)" }}>
                 <div style={styles.small}>App</div>
-                <div style={{ fontWeight: 700 }}>Minimal To‑Do</div>
-                <div style={{ marginTop: 8 }} className="muted">Version 1.0.0 — manual update check not implemented</div>
+                <div style={{ fontWeight: 700 }}>To Do List Checker</div>
+                <div style={{ marginTop: 8 }} className="muted">Version 1.0.0 — manual update check not implemented. -Admin Traci ^^</div>
               </aside>
             </div>
           </section>
@@ -383,3 +384,4 @@ export default function App() {
     </div>
   );
 }
+
